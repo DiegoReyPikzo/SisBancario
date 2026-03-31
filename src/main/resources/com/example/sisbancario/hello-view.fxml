@@ -21,7 +21,7 @@
             <Label layoutX="58.0" layoutY="174.0" text="Ingresa tu contraseña:" />
             <TextField fx:id="usuario" layoutX="212.0" layoutY="116.0" promptText="usuario" />
             <TextField fx:id="contraseña" layoutX="212.0" layoutY="173.0" promptText="contraseña" />
-            <Button fx:id="ventanaIniciar" layoutX="170.0" layoutY="252.0" mnemonicParsing="false" onAction="#onSesion" text="Iniciar sesiòn" />
+            <Button fx:id="VentanaIniciar" layoutX="170.0" layoutY="252.0" mnemonicParsing="false" onAction="#onSesion" text="Iniciar sesiòn" />
             <Label fx:id="error" layoutX="198.0" layoutY="301.0" />
          </children></Pane>
    </children>
