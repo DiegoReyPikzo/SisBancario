@@ -4,20 +4,20 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="396.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloOpciones">
+<AnchorPane prefHeight="500.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloOpciones">
    <children>
-      <Pane layoutX="14.0" layoutY="-11.0" prefHeight="400.0" prefWidth="632.0">
+      <Pane layoutX="7.0" layoutY="-5.0" prefHeight="662.0" prefWidth="632.0">
          <children>
             <Label layoutX="234.0" layoutY="68.0" text="Menu de opciones">
                <font>
                   <Font size="20.0" />
                </font></Label>
-            <Button layoutX="124.0" layoutY="136.0" mnemonicParsing="false" onAction="#onRetiro" text="Retiro">
+            <Button layoutX="85.0" layoutY="136.0" mnemonicParsing="false" onAction="#onRetiro" text="Retiro">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button layoutX="213.0" layoutY="136.0" mnemonicParsing="false" onAction="#onConsulta" text="Consulta de saldo">
+            <Button layoutX="204.0" layoutY="136.0" mnemonicParsing="false" onAction="#onConsulta" text="Consulta de saldo">
                <font>
                   <Font size="20.0" />
                </font>
@@ -27,12 +27,11 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button layoutX="273.0" layoutY="289.0" mnemonicParsing="false" onAction="#onSalir" text="Salir">
+            <Button layoutX="264.0" layoutY="217.0" mnemonicParsing="false" onAction="#onSalir" text="Salir">
                <font>
                   <Font size="20.0" />
                </font>
             </Button>
-             <WebView fx:id="gifRupia" layoutX="215.0" layoutY="220.0" prefWidth="100" prefHeight="100"/>
          </children></Pane>
    </children>
 </AnchorPane>

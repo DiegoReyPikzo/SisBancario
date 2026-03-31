@@ -8,6 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import javafx.scene.control.Button;
 
 import java.io.IOException;
 
@@ -19,6 +20,10 @@ public class HelloController {
     private TextField contrasena;  //Id de los campos y texto
     @FXML
     private Label mensajeError;
+    @FXML
+    private Button btnIniciar;
+
+
 
     @FXML
     protected void onSesion() throws IOException {
@@ -27,17 +32,20 @@ public class HelloController {
 
         if (user.equals("admin") && pass.equals("admin1234")){
             try {
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("Opcionsotas"));
-                Stage stage = (Stage) usuario.getScene().getWindow();
-                stage.setScene(new Scene(loader.load()));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("opciones-view.fxml"));
+                Parent root = loader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Menusito bonito");
+                stage.setScene(new Scene(root));
                 stage.show();
+                ((Stage) btnIniciar.getScene().getWindow()).close();
 
-            } catch (Exception e){
+            } catch (IOException e){
                 e.printStackTrace();
             }
 
         }else {
-            mensajeError.setText("Contraseña o ussuario incorrectos");
+            mensajeError.setText("Contraseña o usuario incorrectos");
         }
     }
     // Oal amigazos

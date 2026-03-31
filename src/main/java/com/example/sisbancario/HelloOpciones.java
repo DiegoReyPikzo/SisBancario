@@ -2,26 +2,51 @@ package com.example.sisbancario;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.web.WebView; //importé todas las dependencias  :D e incluso agregué una que me ayuda a poner un gifsito
+import javafx.scene.control.Button;
 import javafx.stage.Stage;
+
 public class HelloOpciones {
+
+    //Se usa el botón para salir :D
     @FXML
-    private  WebView gifRupia;
+    private Button btnSalir;
+
     @FXML
-    private  void initialize(){
-        gifRupia.getEngine().load(getClass().getResource("GifRupi.gif").toExternalForm());
+    public void initialize() {
+        // Método vacío para borrar hello view
+        System.out.println("Menú de opciones cargado correctamente.");
     }
 
     @FXML
-    protected void onRetiro(){
+    protected void onRetiro() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("Retiro.view.fxml"));
-            Stage stage = (Stage) gifRupia.getScene().getWindow();
-            stage.setScene(new Scene(loader.load()));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("Retiro-view.fxml"));
+            Parent root = loader.load();
+
+            // Obtenemos la ventana actual a través del botón salir
+            Stage stage = (Stage) btnSalir.getScene().getWindow();
+            stage.setScene(new Scene(root));
             stage.show();
-        } catch (Exception e){
+        } catch (Exception e) {
+            System.err.println("Error al abrir la ventana de Retiro");
             e.printStackTrace();
         }
+    }
+    @FXML
+    protected void onConsulta() {
+        System.out.println("Consulta de saldo seleccionada");
+    }
+    @FXML
+    protected void onDeposito() {
+        System.out.println("Depósito seleccionado");
+    }
+
+    @FXML
+    protected void onSalir() {
+        // Cerramos la ventana actual
+        Stage stage = (Stage) btnSalir.getScene().getWindow();
+        stage.close();
     }
 }
