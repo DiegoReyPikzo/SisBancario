@@ -26,11 +26,11 @@ private void confiDeposito(){
         return;
     }
 
-    // Convierte el texto a número (va aquí, antes de verificar si es mayor a 0)
+    // Convierte el texto a número:
     double monto = Double.parseDouble(cantidad);
 
     //Verifica que el valor sea mayor a 0
-    if (monto <= 0) {                    // aquí estaba el error, era cantidad.isEmpty()
+    if (monto <= 0) {
         txtCanti2.setText("La cantidad debe ser mayor a 0.");
         return;
     }
@@ -38,6 +38,8 @@ private void confiDeposito(){
     Banco.saldo = Banco.saldo + monto;
     System.out.println("Deposito exitoso. Saldo actual: $" + Banco.saldo);
     txtCanti2.clear();
+
+
 }
 
     @FXML
