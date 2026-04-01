@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sisbancario.HelloRetiro"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloRetiro">
+   <children>
+      <Label layoutX="151.0" layoutY="28.0" text="Ventana de retiro :DD">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCanti" layoutX="226.0" layoutY="133.0" />
+      <Button layoutX="250.0" layoutY="200.0" mnemonicParsing="false" onAction="#confiRetiro" text="Confirmar retiro" />
+      <Button fx:id="btonVolver" layoutX="77.0" layoutY="133.0" mnemonicParsing="false" onAction="#volverMenu" text="Menú" />
+   </children>
 </AnchorPane>
