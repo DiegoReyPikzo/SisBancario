@@ -7,6 +7,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
+import java.io.IOException;
+
 public class HelloOpciones {
 
     //Se usa el botón para salir :D
@@ -35,8 +37,17 @@ public class HelloOpciones {
         }
     }
     @FXML
-    protected void onConsulta() {
-        System.out.println("Consulta de saldo seleccionada");
+    private void onConsulta() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("consulta-view.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Consulta de Saldo");
+            stage.setScene(new Scene(root, 600, 400));
+            stage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     @FXML
     protected void onDeposito() {

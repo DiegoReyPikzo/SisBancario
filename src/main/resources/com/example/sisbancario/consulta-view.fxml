@@ -9,7 +9,7 @@
          <children>
             <Label layoutX="228.0" layoutY="80.0" text="Ventana de Consulta de saldo :&gt;&gt;" />
             <Button fx:id="btonVolver3" layoutX="133.0" layoutY="177.0" mnemonicParsing="false" text="Menu" />
-            <Button layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
+            <Button fx:id="botonconsultarSaldo" layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
             <TextField layoutX="237.0" layoutY="177.0" />
          </children></Pane>
    </children>
