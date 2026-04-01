@@ -10,7 +10,7 @@
             <Button layoutX="260.0" layoutY="229.0" mnemonicParsing="false" onAction="#confiDeposito" text="Confirmar Deposito" />
             <Label layoutX="251.0" layoutY="73.0" text="Ventana de Deposito :33" />
             <Button fx:id="btonVolver2" layoutX="112.0" layoutY="154.0" mnemonicParsing="false" onAction="#volverMenu2" text="Menu" />
-            <TextField layoutX="246.0" layoutY="154.0" promptText="Ingresa la cantidad" />
+            <TextField fx:id="txtCanti2" layoutX="246.0" layoutY="154.0" promptText="Ingresa la cantidad" />
          </children>
       </Pane>
    </children>
