@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloDeposito">
+   <children>
+      <Pane prefHeight="401.0" prefWidth="600.0">
+         <children>
+            <Button layoutX="260.0" layoutY="229.0" mnemonicParsing="false" onAction="#confiDeposito" text="Confirmar Deposito" />
+            <Label layoutX="251.0" layoutY="73.0" text="Ventana de Deposito :33" />
+            <Button fx:id="btonVolver2" layoutX="112.0" layoutY="154.0" mnemonicParsing="false" onAction="#volverMenu2" text="Menu" />
+            <TextField layoutX="246.0" layoutY="154.0" promptText="Ingresa la cantidad" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

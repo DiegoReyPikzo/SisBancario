@@ -2,7 +2,7 @@ package com.example.sisbancario;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent; //Importando las librrerias ;DDDDD
+import javafx.scene.Parent; //Importando las librerias ;DDDDD
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
