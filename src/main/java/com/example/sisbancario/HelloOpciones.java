@@ -36,6 +36,7 @@ public class HelloOpciones {
             e.printStackTrace();
         }
     }
+
     @FXML
     private void onConsulta() {
         try {
@@ -49,9 +50,19 @@ public class HelloOpciones {
             e.printStackTrace();
         }
     }
+
     @FXML
     protected void onDeposito() {
-        System.out.println("Depósito seleccionado");
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("deposito-view.fxml"));
+            Parent root = loader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Ventana de depósito :D");
+            stage.setScene(new Scene(root));
+            stage.show();
+        } catch (Exception e) {
+            System.out.println("Depósito no funcionó correctamente :(");
+        }
     }
 
     @FXML
