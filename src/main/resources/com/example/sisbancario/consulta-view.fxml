@@ -8,9 +8,10 @@
       <Pane layoutX="-11.0" layoutY="-11.0" prefHeight="411.0" prefWidth="614.0">
          <children>
             <Label layoutX="228.0" layoutY="80.0" text="Ventana de Consulta de saldo :&gt;&gt;" />
-            <Button fx:id="btonVolver3" layoutX="133.0" layoutY="177.0" mnemonicParsing="false" text="Menu" />
-            <Button fx:id="botonconsultarSaldo" layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
-            <TextField layoutX="237.0" layoutY="177.0" />
-         </children></Pane>
+            <Button fx:id="botonconsultarSaldo" layoutX="327.0" layoutY="227.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
+            <TextField fx:id="lblSaldo" editable="false" layoutX="228.0" layoutY="165.0" prefWidth="180.0" />
+            <Button fx:id="btonVolver3" layoutX="205.0" layoutY="227.0" mnemonicParsing="false" onAction="#volverMenu" text="Menu" />
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
