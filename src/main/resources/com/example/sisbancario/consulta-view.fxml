@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.sisbancario.HelloConsulta"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloConsulta">
+   <children>
+      <Pane layoutX="-11.0" layoutY="-11.0" prefHeight="411.0" prefWidth="614.0">
+         <children>
+            <Label layoutX="228.0" layoutY="80.0" text="Ventana de Consulta de saldo" />
+            <Button fx:id="btonVolver3" layoutX="133.0" layoutY="177.0" mnemonicParsing="false" text="Menu" />
+            <Button layoutX="261.0" layoutY="246.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
+            <TextField layoutX="237.0" layoutY="177.0" />
+         </children></Pane>
+   </children>
 </AnchorPane>
