@@ -16,27 +16,29 @@ public class HelloDeposito {
     private Button btonVolver2;
 
 //Boton de DEPOSITO
-    @FXML
-    private  void confiDeposito(){
-        String cantidad = txtCanti2.getText();
+@FXML
+private void confiDeposito(){
+    String cantidad = txtCanti2.getText();
 
     //Verifica que no esté vacío:
-        if (cantidad.isEmpty()) {
-            txtCanti2.setText("Escribe una cantidad.");
-            return;
-        }
-    //Verifica que el valor sea mayor a 0
-        if (cantidad.isEmpty()) {
-            txtCanti2.setText("La cantidad debe ser mayor a 0.");
-            return;
-        }
-
-        double monto = Double.parseDouble(cantidad);
-
-        Banco.saldo = Banco.saldo + monto;
-        System.out.println("Deposito exitoso. Saldo actual: $" + Banco.saldo);
-        txtCanti2.clear();
+    if (cantidad.isEmpty()) {
+        txtCanti2.setText("Escribe una cantidad.");
+        return;
     }
+
+    // Convierte el texto a número (va aquí, antes de verificar si es mayor a 0)
+    double monto = Double.parseDouble(cantidad);
+
+    //Verifica que el valor sea mayor a 0
+    if (monto <= 0) {                    // aquí estaba el error, era cantidad.isEmpty()
+        txtCanti2.setText("La cantidad debe ser mayor a 0.");
+        return;
+    }
+
+    Banco.saldo = Banco.saldo + monto;
+    System.out.println("Deposito exitoso. Saldo actual: $" + Banco.saldo);
+    txtCanti2.clear();
+}
 
     @FXML
     protected void volverMenu2() {
