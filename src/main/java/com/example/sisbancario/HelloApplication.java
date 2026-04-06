@@ -11,9 +11,10 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 480, 520);
         stage.setTitle("Banco Bañorte!");
+        stage.setResizable(false);
         stage.setScene(scene); // Decoralo en fa Meri gei porfa
-        stage.show();
+        stage.show();           //Voy volando fiuuum
     }
 }
