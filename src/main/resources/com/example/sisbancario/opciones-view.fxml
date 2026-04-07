@@ -1,37 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="500.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloOpciones">
    <children>
-      <Pane layoutX="7.0" layoutY="-5.0" prefHeight="662.0" prefWidth="632.0">
+      <Pane layoutX="7.0" layoutY="-5.0" prefHeight="500.0" prefWidth="623.0">
          <children>
-            <Label layoutX="234.0" layoutY="68.0" text="Menu de opciones">
+            <Label layoutX="54.0" layoutY="61.0" text="Menu de opciones">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Fira Code Regular" size="29.0" />
                </font></Label>
-            <Button layoutX="85.0" layoutY="136.0" mnemonicParsing="false" onAction="#onRetiro" text="Retiro">
+            <Button layoutX="54.0" layoutY="266.0" mnemonicParsing="false" onAction="#onRetiro" text="Retiro">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Fira Code Regular" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="204.0" layoutY="136.0" mnemonicParsing="false" onAction="#onConsulta" text="Consulta de saldo">
+            <Button layoutX="54.0" layoutY="419.0" mnemonicParsing="false" onAction="#onConsulta" text="Consulta de saldo">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Fira Code Regular" size="20.0" />
                </font>
             </Button>
-            <Button layoutX="407.0" layoutY="136.0" mnemonicParsing="false" onAction="#onDeposito" text="Deposito">
+            <Button layoutX="54.0" layoutY="341.0" mnemonicParsing="false" onAction="#onDeposito" text="Deposito">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Fira Code Regular" size="20.0" />
                </font>
             </Button>
-            <Button fx:id="btnSalir" layoutX="264.0" layoutY="217.0" mnemonicParsing="false" onAction="#onSalir" text="Salir">
+            <Button fx:id="btnSalir" layoutX="416.0" layoutY="419.0" mnemonicParsing="false" onAction="#onSalir" text="Salir">
                <font>
-                  <Font size="20.0" />
+                  <Font name="Fira Code Regular" size="20.0" />
                </font>
             </Button>
+            <ImageView fitHeight="245.0" fitWidth="245.0" layoutX="340.0" layoutY="155.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/qwasfdeghj.jpg" />
+               </image></ImageView>
+            <Label layoutX="54.0" layoutY="111.0" prefHeight="17.0" prefWidth="1096.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod." textAlignment="CENTER" />
+            <Label layoutX="54.0" layoutY="134.0" text="Duis aute irure dolor in reprehenderit in voluptate." />
+            <Label layoutX="54.0" layoutY="155.0" text="Excepteur sint occaecat cupidatat." />
          </children></Pane>
    </children>
 </AnchorPane>

@@ -11,9 +11,9 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
    <children>
-      <Pane prefHeight="396.0" prefWidth="862.0">
+      <Pane prefHeight="425.0" prefWidth="510.0">
          <children>
-            <Label layoutX="78.0" layoutY="41.0" text="Bienvenido al portal de banca Bañorte" textAlignment="CENTER">
+            <Label layoutX="21.0" layoutY="41.0" text="Bienvenido al portal de banca Bañorte" textAlignment="CENTER">
                <font>
                   <Font name="Fira Code Regular" size="18.0" />
                </font>
@@ -28,16 +28,16 @@
                </font></Label>
             <TextField fx:id="usuario" layoutX="233.0" layoutY="104.0" promptText="usuario" />
             <TextField fx:id="contrasena" layoutX="234.0" layoutY="152.0" promptText="contraseña" />
-            <Button fx:id="btnIniciar" layoutX="159.0" layoutY="207.0" mnemonicParsing="false" onAction="#onSesion" text="Iniciar sesión">
+            <Button fx:id="btnIniciar" layoutX="158.0" layoutY="207.0" mnemonicParsing="false" onAction="#onSesion" text="Iniciar sesión">
 
                <font>
                   <Font name="Fira Code Regular" size="12.0" />
                </font></Button>
-            <ImageView fitHeight="90.0" fitWidth="140.0" layoutX="138.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="90.0" fitWidth="140.0" layoutX="146.0" layoutY="247.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@Imagenes/Link%208-Bit.jpg" />
                </image></ImageView>
-            <Label fx:id="mensajeError" layoutX="168.0" layoutY="251.0" />
+            <Label fx:id="mensajeError" layoutX="119.0" layoutY="330.0" />
          </children></Pane>
    </children>
 </VBox>

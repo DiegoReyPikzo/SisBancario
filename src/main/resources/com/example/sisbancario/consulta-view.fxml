@@ -1,16 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloConsulta">
    <children>
-      <Pane layoutX="-11.0" layoutY="-11.0" prefHeight="411.0" prefWidth="614.0">
+      <Pane layoutX="-11.0" layoutY="-11.0" prefHeight="478.0" prefWidth="717.0">
          <children>
-            <Label layoutX="228.0" layoutY="80.0" text="Ventana de Consulta de saldo :&gt;&gt;" />
-            <Button fx:id="botonconsultarSaldo" layoutX="327.0" layoutY="227.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo" />
-            <TextField fx:id="lblSaldo" editable="false" layoutX="228.0" layoutY="165.0" prefWidth="180.0" />
-            <Button fx:id="btonVolver3" layoutX="205.0" layoutY="227.0" mnemonicParsing="false" onAction="#volverMenu" text="Menu" />
+            <Label layoutX="41.0" layoutY="57.0" text="Ventana de Consulta de saldo :&gt;&gt;">
+               <font>
+                  <Font name="Fira Code Regular" size="29.0" />
+               </font></Label>
+            <Button fx:id="botonconsultarSaldo" layoutX="72.0" layoutY="178.0" mnemonicParsing="false" onAction="#consultarSaldo" text="Consultar Saldo">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></Button>
+            <TextField fx:id="lblSaldo" editable="false" layoutX="72.0" layoutY="132.0" prefWidth="180.0" promptText="Tu saldo">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></TextField>
+            <Button fx:id="btonVolver3" layoutX="72.0" layoutY="227.0" mnemonicParsing="false" onAction="#volverMenu" text="Menu">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></Button>
+            <ImageView fitHeight="162.0" fitWidth="238.0" layoutX="335.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/Me%20and%20twin.jpg" />
+               </image>
+            </ImageView>
          </children>
       </Pane>
    </children>

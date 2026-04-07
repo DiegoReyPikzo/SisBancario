@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloRetiro">
    <children>
-      <Label layoutX="151.0" layoutY="28.0" text="Ventana de retiro :DD">
+      <Label layoutX="44.0" layoutY="45.0" text="Ventana de retiro :DD">
          <font>
-            <Font name="Comic Sans MS" size="29.0" />
+            <Font name="Fira Code Regular" size="29.0" />
          </font>
       </Label>
-      <TextField fx:id="txtCanti" layoutX="226.0" layoutY="133.0" />
-      <Button layoutX="250.0" layoutY="200.0" mnemonicParsing="false" onAction="#confiRetiro" text="Confirmar retiro" />
-      <Button fx:id="btonVolver" layoutX="77.0" layoutY="133.0" mnemonicParsing="false" onAction="#volverMenu" text="Menú" />
+      <TextField fx:id="txtCanti" layoutX="44.0" layoutY="117.0" prefHeight="26.0" prefWidth="196.0" promptText="Ingresa la cantidad">
+         <font>
+            <Font name="Fira Code Regular" size="12.0" />
+         </font></TextField>
+      <Button layoutX="44.0" layoutY="174.0" mnemonicParsing="false" onAction="#confiRetiro" text="Confirmar retiro">
+         <font>
+            <Font name="Fira Code Regular" size="12.0" />
+         </font></Button>
+      <Button fx:id="btonVolver" layoutX="44.0" layoutY="225.0" mnemonicParsing="false" onAction="#volverMenu" text="Menú">
+         <font>
+            <Font name="Fira Code Regular" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="206.0" fitWidth="224.0" layoutX="324.0" layoutY="148.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Imagenes/descargar%20(17).jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="txtError" layoutX="51.0" layoutY="286.0">
+         <font>
+            <Font name="Fira Code Regular" size="12.0" />
+         </font></Label>
    </children>
 </AnchorPane>

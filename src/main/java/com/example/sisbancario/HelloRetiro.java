@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent; //Importando las librerias ;DDDDD
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 public class HelloRetiro {
@@ -14,6 +15,8 @@ public class HelloRetiro {
     private TextField txtCanti;
     @FXML
     private Button btonVolver;
+    @FXML
+    private Label txtError;
 
     @FXML
     private  void confiRetiro(){
@@ -21,7 +24,7 @@ public class HelloRetiro {
 
         //Verifica que no esté vacío:
         if (cantidad.isEmpty()) {
-            txtCanti.setText("Escribe una cantidad.");
+            txtError.setText("Escribe una cantidad.");
             return;
         }
 
@@ -30,18 +33,18 @@ public class HelloRetiro {
 
         //Verifica que el valor sea mayor a 0
         if (monto <= 0) {
-            txtCanti.setText("La cantidad debe ser mayor a 0.");
+            txtError.setText("La cantidad debe ser mayor a 0.");
             return;
         }
 
         // Verifica que haya suficiente saldo:
         if (monto > Banco.saldo) {
-            txtCanti.setText("Saldo insuficiente.");
+            txtError.setText("Saldo insuficiente.");
             return;
         }
 
         Banco.saldo = Banco.saldo - monto;
-        System.out.println("Retiro exitoso. Saldo actual: $" + Banco.saldo);
+        txtError.setText("Retiro exitoso.");
         txtCanti.clear();
 
     }

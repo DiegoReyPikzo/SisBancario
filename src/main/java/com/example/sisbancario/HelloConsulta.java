@@ -26,7 +26,7 @@ public class HelloConsulta {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("opciones-view.fxml"));
             Parent root = loader.load();
             Stage stage = new Stage();
-            stage.setTitle("Menusito bonito");
+            stage.setTitle("Consulta de saldo bonito");
             stage.setScene(new Scene(root, 530, 500));
             stage.show();
             ((Stage) btonVolver3.getScene().getWindow()).close();

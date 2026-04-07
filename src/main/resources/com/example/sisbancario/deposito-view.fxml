@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sisbancario.HelloDeposito">
    <children>
       <Pane prefHeight="401.0" prefWidth="600.0">
          <children>
-            <Button layoutX="260.0" layoutY="229.0" mnemonicParsing="false" onAction="#confiDeposito" text="Confirmar Deposito" />
-            <Label layoutX="251.0" layoutY="73.0" text="Ventana de Deposito :33" />
-            <Button fx:id="btonVolver2" layoutX="112.0" layoutY="154.0" mnemonicParsing="false" onAction="#volverMenu2" text="Menu" />
-            <TextField fx:id="txtCanti2" layoutX="246.0" layoutY="154.0" promptText="Ingresa la cantidad" />
+            <Button layoutX="49.0" layoutY="168.0" mnemonicParsing="false" onAction="#confiDeposito" text="Confirmar Deposito">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></Button>
+            <Label layoutX="41.0" layoutY="44.0" text="Ventana de Deposito :33">
+               <font>
+                  <Font name="Fira Code Regular" size="29.0" />
+               </font></Label>
+            <Button fx:id="btonVolver2" layoutX="49.0" layoutY="213.0" mnemonicParsing="false" onAction="#volverMenu2" text="Menu">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></Button>
+            <TextField fx:id="txtCanti2" layoutX="49.0" layoutY="115.0" prefHeight="25.0" prefWidth="176.0" promptText="Ingresa la cantidad">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font></TextField>
+            <ImageView fitHeight="172.0" fitWidth="196.0" layoutX="292.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Imagenes/aaaaaaa.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtError2" layoutX="49.0" layoutY="277.0">
+               <font>
+                  <Font name="Fira Code Regular" size="12.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
    </children>
